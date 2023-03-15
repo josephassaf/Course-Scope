@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Scope</title>
+
+    <style type="text/css">
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+  }
+  
+  header {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+  }
+  
+  p {
+    color: black;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  input[type="text"],
+  textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: blue;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    pointer-events: auto;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: grey;
+  }
+  
+      .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+  }
+  .members {
+    text-align: center;
+    color: black;
+  }
+  .jpm {
+    text-align: center;
+    color: blue;
+  }
+  * {
+     box-sizing: border-box;
+  }
+        
+  .mySlides {
+     display: none;
+  }
+  .mySlides:first-child {
+    display: block;
+  }  
+        
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+       
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+        
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+        
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: blue;
+  }
+        
+  /* Number text */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#learning-resources">Learning resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main-section" id="home">
+    <main>
+      <h1 class="center">Welcome to Course Scope</h1>
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="logo.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="finalproject1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="finalproject2.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="finalproject3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="finalproject6.jpg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="finalproject7.jpg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+       
+     <h3>Welcome to Course Scope, your go-to destination for online learning!<br>
+      We provide high-quality educational resources that are accessible from anywhere in the world.</h3>
+      <ul>
+        <li>
+          <h2><u>Interactive video lessons that engage students.</u></h2>
+        <li>
+          <h2><u>Access to expert tutors and instructors.</u></h2>
+        </li>
+        <li>
+          <h2><u>Flexible scheduling and course options.</u></h2>
+        </li>
+        <li>
+          <h2><u>Personalized learning plans that adapt to each student's needs.</u></h2>
+        </li>
+      </ul>
+    </main>
+    </section>
+    <section class="about-section" id="about">
+      <main>
+        <h1><i><u>Introduction:</u></i></h1>
+        <p>At Course Scope, we believe that education should be accessible to everyone, regardless of their location or schedule.<br>
+          That's why we created an online learning platform that provides high-quality educational resources to students around the world!</p>
+          <h2><i>Meet our team:</i></h2>
+          <div class="team-member">
+            <div class="profile">
+              <h1 class="members"><u>Joseph Assaf - CEO and Founder.</u></h1>
+              <img src="joseph-assaf.jpg" alt="Joseph's Picture">
+            </div>
+            <h2 class="jpm">Joseph has over 15 years of experience in the education industry, specializing in curriculum design and instructional technology.<br>
+              He holds a PhD in Education from Stanford University and is passionate about creating engaging and effective online learning experiences.</h2>
+          </div>
+          <div class="team-member">
+            <div class="profile">
+              <h1 class="members"><u>Jean-Pierre Chalhoub  - Course Designer.</u></h1>
+              <img src="jean-pierre.jpg" alt="Joseph's Picture">
+            </div>
+            <h2 class="jpm">Jean-Pierre is a certified instructional designer with expertise in e-learning development and multimedia design.<br>
+              He has worked on a variety of projects, ranging from corporate training programs to K-12 curriculum design.</h2>
+          </div>
+          <div class="team-member">
+            <div class="profile">
+              <h1 class="members"><u>Mary Brown - Marketing Manager.</u></h1>
+              <img src="mary-brown.jpg" alt="Joseph's Picture">
+            </div>
+            <h2 class="jpm">Mary is an experienced marketer with a background in digital advertising and content creation.<br>
+              She is responsible for promoting our courses and ensuring that our website reaches as many potential learners as possible.</h2>
+          </div>
+        <h3>What Our Students Say?</h3>
+        <p>"I recently took the Introduction to Python course and it was fantastic!<br>
+          The instructor was engaging and knowledgeable, and the course materials were well-organized and easy to follow.<br>
+          I learned so much and was able to apply my new skills immediately in my job."<br>
+          - Emily P.</p>
+          <p>"I highly recommend Course Scope.<br>
+            The courses are high-quality and the instructors are top-notch.<br>
+            I've taken several courses here and have been impressed with the level of instruction and the practical applications of the material."<br>
+          - Mark R.</p>
+    <section class="services-section" id="services">
+      <main>
+        <h1><i><u>Course Offerings:</u></i></h1>
+        <ul>
+          <li>
+            <h2>Introduction to Python.</h2>
+            <p>This beginner-level course introduces learners to the basics of Python programming, including data types, control structures, and functions.<br>
+              No prior programming experience is required.</p>
+          <li>
+            <h2>Intermediate HTML and CSS.</h2>
+            <p>This course builds on the foundational concepts of HTML and CSS and teaches learners more advanced techniques, such as responsive design and accessibility.</p>
+          </li>
+          <li>
+            <h2>Advanced Machine Learning.</h2>
+            <p>Designed for learners with a strong background in mathematics and programming.<br>
+              This course delves into the more complex aspects of machine learning, including deep learning and neural networks.</p>
+          </li>
+        </ul>
+        <h1><i><u>Instructor Profiles:</u></i></h1>
+        <ul>
+          <li><div class="team-member">
+            <div class="profile">
+              <h1 class="members"><u>Dr. Jane Smith - Introduction to Python.</u></h1>
+              <img src="jane-smith.jpg" alt="Joseph's Picture">
+            </div>
+            <h2 class="jpm">Dr. Smith has a PhD in Computer Science and has been teaching Python programming for over 10 years.<br>
+              She is passionate about making programming accessible to learners of all levels and backgrounds.</h2>
+          </div></li>
+          <li><div class="team-member">
+            <div class="profile">
+              <h1 class="members"><u>Jim Brown - Intermediate HTML and CSS.</u></h1>
+              <img src="Jim-Brown.jpg" alt="Joseph's Picture">
+            </div>
+            <h2 class="jpm">Jim has been working in web development for over 15 years and has a wealth of experience in creating responsive and visually appealing websites.<br>
+              He is excited to share his knowledge with learners in this course.</h2>
+          </div></li>
+          <li><div class="team-member">
+            <div class="profile">
+              <h1 class="members"><u>Dr. Lisa Chen - Advanced Machine Learning.</u></h1>
+              <img src="lisa_chen.jpg" alt="Joseph's Picture">
+            </div>
+            <h2 class="jpm">Dr. Chen holds a PhD in Mathematics and has been conducting research in machine learning for over a decade.<br>
+              She is a published author and has presented her work at numerous conferences and events.</h2>
+          </div></li>
+        </ul>
+      </section>
+    </main>
+    <section class="resources" id="learning-resources">
+      <h1><i><u>Our Learning Resources:</u></i></h1>
+      <uL>
+        <li>
+          <h2>Video Lessons</h2>
+          <p>Our courses feature video lessons led by experienced instructors who provide clear explanations and demonstrations of key concepts.</p>
+        </li>
+        <li>
+          <h2>Interactive Exercises</h2>
+          <p>We offer interactive exercises to help learners apply their new knowledge in a practical way.<br>
+            These exercises are designed to be engaging and fun while also reinforcing the material covered in the course.</p>
+        </li>
+        <li>
+          <h2>Quizzes</h2>
+          <p>Our quizzes allow learners to test their knowledge and track their progress.<br>
+            We offer both formative and summative assessments to ensure that learners are fully engaged with the course material.</p>
+        </li>
+        <li>
+          <h2>Discussion Forums</h2>
+          <p>Our discussion forums provide learners with the opportunity to connect with their peers and instructors, ask questions, and share ideas.<br>
+            This interactive element helps to foster a sense of community and collaboration among learners.</p>
+        </li>
+      </uL>
+    </section>
+    </section>
+    <section class="contact-section" id="contact">
+      <br><h1><i><u>Contact Us:</u></i></h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="subject">Subject:</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+      
+      <script>
+
+        // JavaScript for form validation and submission
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); // prevent the form from submitting
+          var name = document.querySelector("#name").value;
+          var email = document.querySelector("#email").value;
+          var subject = document.querySelector("#subject").value;
+          // check if any fields are empty
+          if (!name || !email || !subject) {
+            alert("Please fill in all fields!");
+            return;
+          }
+          // check if email is valid
+          var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              console.log("Form submitted");
+            });
+
+            var slideIndex = 1;
+
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex-1].style.display = "block";
+              captionText.innerHTML = captionText.alt;
+            }
+              </script>
+    </section>  
+  </body>
+</html>
